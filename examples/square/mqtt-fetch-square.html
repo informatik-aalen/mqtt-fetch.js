@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="/lib/mqttws31.min.js"></script>
+		<script src="/lib/mqtt-fetch.js"></script>
+		<script src="mqtt-fetch-square.js"></script>
+	</head>
+	<body>
+		<input id="v">
+		<input onclick="f1('v','o')" type="button" value="get">
+		<output id="o"></output>
+		<br>
+		<input id="v2">
+		<input onclick="f1('v2','o2')" type="button" value="get">
+		<output id="o2"></output>
+		<hr>
+		<input onclick="f2()" type="button" value="loop">
+		<br>
+		 subscribe to_all:
+		<input onchange="f3(this.checked)" type="checkbox">
+		<output id="toall">&nbsp;</output>
+	</body>
+</html>
